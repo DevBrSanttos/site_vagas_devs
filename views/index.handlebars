@@ -1,0 +1,34 @@
+
+    <main>
+        <section class="banner">
+            <h1 class="titulo-banner">Encontre o emprego dos seus sonhos</h1>
+            <h2 class="subtitulo-banner">somos o site com mais vagas de tecnologia no mercado</h2>
+            <form action="/" method="GET">
+                <div class="items-formulario">
+                    <input class="campo-buscar-vaga" type="text" name="vaga" id="vaga" placeholder="Digite a vaga que está buscando">
+                    <button class="botao-submit" type="submit">Buscar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <section class="vagas-container">   
+        <h2 class="title">Veja nossas vagas em destaque</h2>
+        <ul>
+            {{#each vagas}}
+            <li class="vaga">
+                <div class="container-dados-empresa">
+                    <img src="/img/company.png" alt="company">                    
+                    <div>
+                        <p>Empresa: {{dataValues.empresa}}</p>
+                        <h2>{{dataValues.titulo}}</h2>    
+                        <p>Salário: R$ {{dataValues.salario}}</p>
+                    </div>                    
+                </div>                
+                <div class="container-botao">                        
+                    <a href="/vaga/detalhesVaga/{{dataValues.id}}">ver vaga</a>
+                </div>                  
+            </li>
+            {{/each}}                 
+        </ul>
+    </section>
+

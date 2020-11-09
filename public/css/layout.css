@@ -1,0 +1,361 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+/* Cabeçalho */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    font-size: 1.3em;
+    height: auto;
+    align-items: center;
+    background-color: #F8F9FA;    
+    width: 100%;    
+    position: fixed;
+    flex-wrap: wrap;
+    
+}
+
+header div{
+    margin: 20px 20px;
+}
+
+.logo{
+    color: #111;
+}
+
+.header-div a{
+    margin-left: 10px;
+    padding: 10px;
+    color: #555;    
+    font-family: .9em;
+}
+
+.header-div .ver-vaga:hover{
+    color: #111;
+    
+}
+
+.header-div .abrir-vaga{
+    color: #FFF;    
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    background-color: #F03E3E;
+    border-radius: 0;
+    font-weight: bold;
+}
+
+.header-div .abrir-vaga:hover, .banner form div .botao-submit:hover, .container-botao a:hover, .formulario-container .formulario .botao-add-vaga:hover, .vagas-container ul li .container-botao a:hover {
+    background-color: #FFF;
+    color: #F03E3E;
+    border-color: #F03E3E;
+    transition: .5s;
+}
+
+
+
+/* Banner */
+.banner{    
+    padding-top: 80px;
+    display: flex;
+    height: 500px;    
+    flex-direction: column;        
+    background-image: url('../img/banner2.jpg');
+    background-repeat: no-repeat;    
+    background-size: cover;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.banner .titulo-banner{
+    font-size: 3em;
+    padding: 50px 0;
+    color: #FFF;
+    font-weight: normal;
+    margin: 0px 15px;
+}
+
+.banner .subtitulo-banner{
+    font-size: 1.3em;
+    color: #FFF;    
+    font-weight: normal;
+    margin: 0px 15px;
+    margin-bottom: 20px;
+}
+.banner form{    
+    max-width: 770px;
+    width: 100%;    
+}
+
+.banner form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;    
+    margin: 0px 2.5%;
+    
+
+}
+
+.banner form div .campo-buscar-vaga{
+    width: calc(100% - 30%);    
+    height: 50px;    
+    font-size: 28px;
+    padding: 0px 15px;
+    font-size: 18px;
+       
+}
+
+.banner form div .botao-submit{
+    width: 30%;
+    height: 50px;
+    border-radius: 0;
+    font-size: 18px;
+    color: #FFF;
+    background-color: #F03E3E;
+    border: 1px solid transparent;
+    cursor: pointer;
+    
+    
+}
+
+/*---- VAGAS ----*/
+.vagas-container h2{
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.vagas-container ul{
+    display: flex;
+    flex-direction: column;    
+    max-width: 800px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.vagas-container ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, .15);    
+    max-height: 100px;
+    margin: 10px 10px;
+}
+
+.vagas-container ul li .container-dados-empresa{
+    display: flex;
+    flex-direction: row;
+    max-width: 600px; 
+    width: auto;
+}
+
+.vagas-container ul li .container-dados-empresa img{
+    max-width: 90px;    
+    width: auto;    
+}
+
+.vagas-container ul li .container-dados-empresa div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    margin-left: 10px;
+    
+}
+.vagas-container ul li .container-dados-empresa div h2{    
+    text-transform: uppercase;
+    text-align: start;
+    margin: 0px;    
+}
+
+.vagas-container ul li .container-botao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.3rem;
+}
+
+.vagas-container ul li .container-botao a{
+    padding: 15px 10px;
+    background-color: #F03E3E;
+    margin: 0px 10px;
+    color: #FFF;
+}
+
+
+
+
+/* add vaga */
+
+.add-container {
+    padding-top: 80px;
+}
+
+.add-container .title{
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.formulario-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.formulario-container .formulario{
+    margin: 10px 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .15);    
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+}
+
+.formulario-container .formulario h2{    
+    font-size: 1.5rem;
+    color: #F03E3E;
+    margin: 30px 40px;
+}
+
+.formulario-container .formulario div{
+    margin: 10px 40px;  
+    width: 90%;  
+}
+.formulario-container .formulario div p{
+    margin-bottom: 5px;
+}
+
+.formulario-container .formulario div .campo-texto{
+    width: 100%;
+    height: 50px;    
+    padding: 5px 15px;
+    font-size: 18px;
+        
+}
+
+.formulario-container .formulario .botao-add-vaga{
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    margin: 40px 40px;
+    border-radius: 0;
+    font-size: 18px;
+    color: #FFF;
+    background-color: #F03E3E;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+
+
+/* Ver vaga */
+.ver-vaga-container{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ver-vaga-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+    margin-top: 50px;
+    width: auto;
+    max-width: 700px;
+    font-size: 1.1rem;
+}
+
+.ver-vaga-container div img{
+    border: 1px solid black;
+    border-radius: 50%;    
+    width: 30%;
+    margin: 20px 0px;
+}
+.ver-vaga-container div p{
+    margin: 5px 0px;
+}
+
+.ver-vaga-container div h2{
+    margin: 5px 0px;    
+    font-size: 1.2rem;
+}
+
+.vagas-container ul li .container-botao a{
+    border: 1px solid transparent;
+}
+
+
+
+/* Responsivo */
+label[for="bt-menu"]{
+    display: none;
+    padding: 5px;
+    background-color: #F8F9FA;
+    color: #F03E3E;
+    border: solid 1px #F03E3E;    
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 5px 5px;
+    
+}
+#bt-menu{
+    display: none;   
+}
+
+
+@media screen and (max-width: 700px){
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    label[for="bt-menu"]{
+        display: block;
+    }
+    header div{            
+        margin: 10px 0px;
+        width: 100%;
+        text-align: center;
+        
+    }
+            
+    .header-div a{
+        display: flex;        
+        flex-direction: column;
+        margin: 5px 0px;
+        padding: 5px;
+    }
+    #bt-menu:checked ~ .esconde{
+        display: none;
+    }
+
+    .vagas-container ul li .container-dados-empresa div h2{    
+        font-size: 1.2em;
+    }
+
+    .vagas-container ul li .container-botao a{
+        padding: 10px 10px;
+        
+    }
+
+
+}
+
+
+
+

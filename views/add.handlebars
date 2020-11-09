@@ -1,0 +1,31 @@
+<section class="add-container">       
+        <h2 class="title">Divulgue a vaga preenchendo formulario</h2>            
+        
+        <div class="formulario-container">
+            <form class="formulario" action="/vaga/add" method="POST">
+                <h2>Preencha os dados da melhor forma possível para encontrar mais rapido seu dev!</h2>
+                <div class="grupo-formulario">
+                    <p>Título da vaga</p>
+                    <input type="text" class="campo-texto" id="titulo" name="titulo" placeholder="digite o titulo da vaga" required>
+                    <small>O título é muito importante, seja claro e objetivo.</small>
+                </div>
+                <div class="grupo-formulario">
+                    <p>Descrição da vaga</p>                    
+                    <textarea class="campo-texto" name="descricao" id="descricao" cols="30" rows="10" placeholder="Escreva as atividades do desenvolvedor" required></textarea>
+                </div>
+                <div class="grupo-formulario">
+                    <p>Empresa contratante</p>
+                    <input type="text" class="campo-texto" id="empresa" name="empresa" placeholder="digite a empresa que vai contratar" required>                    
+                </div>
+                <div class="grupo-formulario">
+                    <p>Email para contato</p>
+                    <input type="email" class="campo-texto" id="email" name="email" placeholder="digite o email para contato" required>                    
+                </div>
+                <div class="grupo-formulario">
+                    <p>Salario oferecido</p>
+                    <input type="text" class="campo-texto" id="salario" name="salario" placeholder="digite o salario oferecido" required>                    
+                </div>
+                <button class="botao-add-vaga" type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
